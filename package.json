@@ -1,0 +1,26 @@
+{
+  "name": "course-ts-michail-nep",
+  "version": "1.0.0",
+  "description": "Learning TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "prod": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/govorov-top/course-ts-michail-nep.git"
+  },
+  "author": "Roman Govorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/govorov-top/course-ts-michail-nep/issues"
+  },
+  "homepage": "https://github.com/govorov-top/course-ts-michail-nep#readme",
+  "devDependencies": {
+    "typescript": "^5.1.5",
+    "@types/node": "^20.3.2",
+    "tslint": "^6.1.3"
+  }
+}
