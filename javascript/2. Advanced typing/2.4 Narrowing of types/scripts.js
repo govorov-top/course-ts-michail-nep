@@ -10,6 +10,7 @@ function f(x) {
     }
 }
 function f2(strings) {
+    //if (Array.isArray(strings)){
     if (strings && typeof strings === "object") {
         strings.concat([]);
     }

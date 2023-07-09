@@ -7,7 +7,7 @@ const user = {
         this.admin = true;
     }
 };
-// <button onClick="myClickHandler(2)">Click!</button>
-function myClickHandler(event) {
+// <button onClick="myClickHandler(`something`)">Click!</button>
+function myClickHandler(event, something) {
     this.disabled = true;
 }
