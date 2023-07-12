@@ -45,3 +45,5 @@ function slice(str:string, start:number, end?:number): string {
 
     return newStr;
 }
+
+export {average}

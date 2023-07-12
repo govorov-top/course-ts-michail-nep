@@ -1,5 +1,7 @@
 "use strict";
 /** Basic typing of functions **/
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.average = void 0;
 function sum(a, b) {
     return a + b;
 }
@@ -22,6 +24,7 @@ function average(...nums) {
     const sum = nums.reduce((current, total) => current + total, 0);
     return sum / nums.length;
 }
+exports.average = average;
 average(1, 2, 3, 45, 99);
 // The task is to rewrite a function written in JS to TS
 function slice(str, start, end) {
