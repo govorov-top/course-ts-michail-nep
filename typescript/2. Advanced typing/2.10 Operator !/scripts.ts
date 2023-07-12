@@ -1,22 +1,31 @@
-"use strict";
 /** Operator ! **/
-let word = null;
+let word: string | null = null;
+
 const num = 6853;
-if (num > 10000) {
+if(num>10000){
     word = 'abc';
 }
+
 //console.log(word.toUpperCase());
-console.log(word.toUpperCase());
-function printName(name) {
+console.log(word!.toUpperCase());
+
+function printName(name?:string):void {
     //const fullName: string = name;
-    const fullName = name;
+    const fullName: string = name!;
 }
-function printName2(person) {
+
+interface Person {
+    name: string,
+    age: number,
+    sex: 'female' | 'male',
+}
+function printName2(person?:Person):void {
     //console.log(person.name);
     //console.log(person?.name);
-    console.log(person.name);
+    console.log(person!.name);
 }
-const people = [
+
+const people: Person[] = [
     {
         name: 'Gran',
         age: 70,
@@ -37,6 +46,7 @@ const people = [
         age: 38,
         sex: 'male'
     }
-];
+]
+
 //const femalePeople = people.find(person => person.sex === 'female');
-const femalePeople = people.find(person => person.sex === 'female');
+const femalePeople = people.find(person => person.sex === 'female')!;

@@ -1,5 +1,5 @@
 "use strict";
-/** Оператор ! **/
+/** Operator ! **/
 let word = null;
 const num = 6853;
 if (num > 10000) {

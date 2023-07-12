@@ -24,6 +24,7 @@ function asyncSum(a:number, b:number, cb?: asyncCb): any {
 asyncSum(1,2);
 
 /* Homework */
+
 // function head(value: string | number[] | boolean[]): string | number | boolean {
 //     return value[0];
 // }
@@ -34,3 +35,5 @@ function head(value: boolean[]) : boolean;
 function head(value: any) : any{
     return value[0];
 }
+
+export {}

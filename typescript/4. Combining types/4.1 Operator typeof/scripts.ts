@@ -1,0 +1,3 @@
+/** Operator typeof **/
+
+export {}
