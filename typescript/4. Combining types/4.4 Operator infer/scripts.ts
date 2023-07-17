@@ -1,15 +1,24 @@
 /** Operator extends **/
 
-type answer_1 = 64 extends number ? true : false;     // true
-type answer_2 = number extends 64 ? true : false;     // false
-type answer_3 = string[] extends any ? true : false;  // true
-type answer_4 = string[] extends any[] ? true : false;// true
-type answer_5 = never extends any ? true : false;     // true
-type answer_6 = any extends any ? true : false;       // true
-type answer_7 = Date extends {new(...args:any[]): any}// false
-    ? true
-    : false;
-type answer_8 = typeof Date extends {new(...args:any[]): any} // true
-    ? true
-    : false;
+// Example 1
+function fromPair(pair: [string, string]) {
+    const [key,value] = pair;
+    return{
+        [key]: value
+    }
+}
+type FirstArg<T> = T extends  (first: infer First, ...args: any[]) => any ? First : never;
+const myPair: FirstArg<typeof fromPair> = ['myKey', 'myValue'];
+fromPair(myPair);
+
+// Example 2
+type ConstructorFirstArg<T> = T extends {new(arg: infer A, ...args: any[]): any} ? A : never;
+class Computer {
+    constructor(brand: string) {}
+}
+let brand: ConstructorFirstArg<typeof Computer> = '';
+
+// Example 3
+let dateArg:ConstructorFirstArg<typeof Date>;
+
 export {}
