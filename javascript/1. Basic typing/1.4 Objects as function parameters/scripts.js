@@ -5,10 +5,10 @@ exports.login = void 0;
 function printPoint(point) {
     console.log(point);
 }
-const obj1 = { x: 1, y: 2 };
+var obj1 = { x: 1, y: 2 };
 printPoint(obj1);
 // The object properties (z:3,coords: false) also go into the body of the printPoint function
-const obj2 = { x: 1, y: 2, z: 3, coords: false };
+var obj2 = { x: 1, y: 2, z: 3, coords: false };
 printPoint(obj2);
 function printName(user) {
     console.log(user.firstName);
@@ -24,14 +24,14 @@ printName({
     firstName: 'Roman',
     lastName: 'Govorov'
 });
-const user1 = {
+var user1 = {
     login: 'login',
     email: 'email',
     password: 'password',
     isOnline: true,
     lastVisited: new Date(2022, 6, 2)
 };
-const admin = {
+var admin = {
     login: 'login',
     email: 'email',
     password: 'password',

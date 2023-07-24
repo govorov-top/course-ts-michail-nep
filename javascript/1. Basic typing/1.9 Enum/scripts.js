@@ -11,8 +11,8 @@ var ShapeKind;
     ShapeKind[ShapeKind["Circle"] = 0] = "Circle";
     ShapeKind[ShapeKind["Square"] = 1] = "Square";
 })(ShapeKind || (ShapeKind = {}));
-const my = ShapeKind.Circle;
-const circle1 = {
+var my = ShapeKind.Circle;
+var circle1 = {
     kind: ShapeKind.Circle,
     radius: 2
 };
@@ -22,7 +22,7 @@ var Grades;
     Grades["Middle"] = "Middle";
     Grades["Senior"] = "Senior";
 })(Grades || (Grades = {}));
-const dev3 = {
+var dev3 = {
     login: 'Junior',
     skills: ['1', '2'],
     level: Grades.Junior,

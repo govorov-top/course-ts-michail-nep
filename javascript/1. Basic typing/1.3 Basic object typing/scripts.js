@@ -1,12 +1,12 @@
 "use strict";
-const car = {
+var car = {
     wheels: 4,
     brand: 'BMW',
     type: 'Sedan',
     isNew: true,
 };
 car.brand = 'NewBrand';
-const car2 = {
+var car2 = {
     wheels: 4,
     brand: 'Opel',
     type: 'Sedan',

@@ -6,20 +6,21 @@ function tuplePairCreator(first) {
         return [first, second];
     };
 }
-const toTupleWith = tuplePairCreator(1);
-const v1 = toTupleWith('2');
-const v2 = toTupleWith(2);
+var toTupleWith = tuplePairCreator(1);
+var v1 = toTupleWith('2');
+var v2 = toTupleWith(2);
 // Homework
 function createMap(list) {
     return function (cb) {
-        const result = [];
-        for (let el of list) {
+        var result = [];
+        for (var _i = 0, list_1 = list; _i < list_1.length; _i++) {
+            var el = list_1[_i];
             result.push(cb(el));
         }
         return result;
     };
 }
-const mapNums = createMap([1, 2, 3, 4, 5]);
-const cbNums = mapNums(num => num + 1);
-const mapStrings = createMap(['1', '2', '3', '4', '5']);
-const cbStrings = mapStrings(string => string + 'updated');
+var mapNums = createMap([1, 2, 3, 4, 5]);
+var cbNums = mapNums(function (num) { return num + 1; });
+var mapStrings = createMap(['1', '2', '3', '4', '5']);
+var cbStrings = mapStrings(function (string) { return string + 'updated'; });

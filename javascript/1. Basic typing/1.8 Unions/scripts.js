@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const newStatus = 'loading';
-const newStatusArr = ['loading'];
+var newStatus = 'loading';
+var newStatusArr = ['loading'];
 function printID(id) {
     // This will not work without the condition:
     // console.log(id.toUpperCase());
@@ -24,7 +24,7 @@ function welcome(person) {
 }
 welcome(['Roman', 'Govorov']);
 welcome('Roman Govorov');
-const dev = {
+var dev = {
     login: 'login',
     skills: ['1', '2'],
     level: 'junior',

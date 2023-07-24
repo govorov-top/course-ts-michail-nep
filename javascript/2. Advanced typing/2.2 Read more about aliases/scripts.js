@@ -1,8 +1,8 @@
 "use strict";
 /** Read more about aliases **/
 Object.defineProperty(exports, "__esModule", { value: true });
-const user1 = {
-    say(arg) { },
+var user1 = {
+    say: function (arg) { },
     phone: "",
     skills: [],
     contractStart: 28,

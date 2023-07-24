@@ -5,7 +5,8 @@ function f1(arg) {
     return arg.a + arg.b;
 }
 // ConstructorParameters
-class Car {
-    constructor(id, brand, model) {
+var Car = /** @class */ (function () {
+    function Car(id, brand, model) {
     }
-}
+    return Car;
+}());

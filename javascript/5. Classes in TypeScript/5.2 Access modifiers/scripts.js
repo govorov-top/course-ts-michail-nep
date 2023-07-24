@@ -1,34 +1,40 @@
 "use strict";
 /** Access modifiers **/
-var _Vehicle_instances, _Vehicle_someAction;
 Object.defineProperty(exports, "__esModule", { value: true });
-class Vehicle {
-    constructor() {
-        _Vehicle_instances.add(this);
+var tslib_1 = require("tslib");
+var Vehicle = /** @class */ (function () {
+    function Vehicle() {
     }
-    drive(speed) {
-        console.log(`Go with speed: ${speed.toFixed()}`);
+    Vehicle.prototype.drive = function (speed) {
+        console.log("Go with speed: ".concat(speed.toFixed()));
         this.log(speed);
-    }
-    stop() {
+    };
+    Vehicle.prototype.stop = function () {
         console.log('Stop');
-    }
-    log(speed) {
-        console.log(`Vehicle has changed speed to: ${speed}`);
-    }
-    alternativeLog(text) {
+    };
+    Vehicle.prototype.log = function (speed) {
+        console.log("Vehicle has changed speed to: ".concat(speed));
+    };
+    // JS
+    /*#someAction(){
+        console.log('Action')
+    }*/
+    Vehicle.prototype.alternativeLog = function (text) {
         console.log(text.toLowerCase());
+    };
+    return Vehicle;
+}());
+var Car = /** @class */ (function (_super) {
+    tslib_1.__extends(Car, _super);
+    function Car() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-}
-_Vehicle_instances = new WeakSet(), _Vehicle_someAction = function _Vehicle_someAction() {
-    console.log('Action');
-};
-class Car extends Vehicle {
-    changeSpeed(speed) {
+    Car.prototype.changeSpeed = function (speed) {
         this.drive(speed);
         this.alternativeLog('Speed was changed');
-    }
-}
-const car = new Car();
+    };
+    return Car;
+}(Vehicle));
+var car = new Car();
 car.drive(1);
 car.stop();

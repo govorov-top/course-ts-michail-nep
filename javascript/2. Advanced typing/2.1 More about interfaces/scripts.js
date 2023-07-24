@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const user = {
+var user = {
     email: "",
     login: "",
     password: ""
 };
-const person = {
+var person = {
     firstName: "",
     lastName: ""
 };
-const employee = {
+var employee = {
     email: 'dw@de.ru',
     contractStart: 0,
     firstName: "",
@@ -17,7 +17,7 @@ const employee = {
     login: "",
     password: "",
 };
-const developer = {
+var developer = {
     contractStart: 0,
     email: "",
     firstName: "",
@@ -26,5 +26,5 @@ const developer = {
     password: "",
     phone: "",
     skills: [],
-    say(arg) { }
+    say: function (arg) { }
 };

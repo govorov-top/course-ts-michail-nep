@@ -13,9 +13,9 @@ class Vehicle {
     }
 
     // JS
-    #someAction(){
+    /*#someAction(){
         console.log('Action')
-    }
+    }*/
     protected alternativeLog(text:string){
         console.log(text.toLowerCase())
     }

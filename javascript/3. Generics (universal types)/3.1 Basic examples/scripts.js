@@ -1,22 +1,26 @@
 "use strict";
 /** Basic examples **/
 Object.defineProperty(exports, "__esModule", { value: true });
-function toArray(...arg) {
+function toArray() {
+    var arg = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        arg[_i] = arguments[_i];
+    }
     return arg;
 }
 toArray(1, 2.3, 5);
 toArray('1,2.3,5', 'adwad', 'r[lpkpw');
-const headArrowFunction = (value) => value[0];
+var headArrowFunction = function (value) { return value[0]; };
 function head(value) {
     return value[0];
 }
 head(['123', '234']);
 headArrowFunction(['1', '2', 3]);
-const obj = {
+var obj = {
     title: 'string',
     value: 'T',
 };
-const obj2 = {
+var obj2 = {
     title: 'string',
     value: [1, 2, 3, 4, 5, 6],
 };

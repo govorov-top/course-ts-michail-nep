@@ -1,12 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Car {
-    go(speed) {
-        console.log(`Go ${speed.toFixed()}`);
+var Car = /** @class */ (function () {
+    function Car() {
     }
-    stop() {
+    Car.prototype.go = function (speed) {
+        console.log("Go ".concat(speed.toFixed()));
+    };
+    Car.prototype.stop = function () {
         console.log('Stop');
-    }
-}
-const car = new Car();
+    };
+    return Car;
+}());
+var car = new Car();
 car.go(1);

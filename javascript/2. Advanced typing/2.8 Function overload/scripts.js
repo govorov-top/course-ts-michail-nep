@@ -7,7 +7,7 @@ function add(a, b) {
 add(1, 3);
 add('1', '3');
 function asyncSum(a, b, cb) {
-    const result = a + b;
+    var result = a + b;
     if (cb) {
         return cb(result);
     }

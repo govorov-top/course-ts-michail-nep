@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/govorov-top/course-ts-michail-nep#readme",
   "devDependencies": {
-    "typescript": "^5.1.5",
     "@types/node": "^20.3.2",
-    "tslint": "^6.1.3"
+    "tslib": "^2.6.0",
+    "tslint": "^6.1.3",
+    "typescript": "^5.1.5"
   }
 }

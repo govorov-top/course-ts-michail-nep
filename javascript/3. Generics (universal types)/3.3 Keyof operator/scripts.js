@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const myValue = 'ontouchend';
-const value = 'brand';
-const value2 = 0;
+var myValue = 'ontouchend';
+var value = 'brand';
+var value2 = 0;

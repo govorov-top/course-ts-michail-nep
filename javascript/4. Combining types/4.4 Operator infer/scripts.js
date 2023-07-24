@@ -3,16 +3,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // Example 1
 function fromPair(pair) {
-    const [key, value] = pair;
-    return {
-        [key]: value
-    };
+    var _a;
+    var key = pair[0], value = pair[1];
+    return _a = {},
+        _a[key] = value,
+        _a;
 }
-const myPair = ['myKey', 'myValue'];
+var myPair = ['myKey', 'myValue'];
 fromPair(myPair);
-class Computer {
-    constructor(brand) { }
-}
-let brand = '';
+var Computer = /** @class */ (function () {
+    function Computer(brand) {
+    }
+    return Computer;
+}());
+var brand = '';
 // Example 3
-let dateArg;
+var dateArg;

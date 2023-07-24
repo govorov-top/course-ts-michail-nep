@@ -1,6 +1,6 @@
 "use strict";
 /** Typing this **/
-const user = {
+var user = {
     id: 123,
     admin: false,
     becomeAdmin: function () {
